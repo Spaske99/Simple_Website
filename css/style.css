@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+	background-image:url(../images/bmw.jpg);
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-attachment:fixed;
+	background-size:cover;
+	}
+
+#wrapper{
+	margin:10px auto;
+	background: rgba(255, 255, 255,0.7);
+	width:850px;
+	padding: 5px;
+	border-radius: 5px;
+	}
+
+#header{
+	width:850px;
+	overflow:hidden;
+	font-family: 'Unlock', cursive;
+	font-size: 20px;
+	}
+
+#logo{
+	float:left;
+	padding: 0;
+	margin:5px 0 5px 10px;
+	animation:gear 6s infinite;
+	}
+
+@keyframes gear{
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(180deg);}
+	100%{transform:rotate(360deg);}
+	}
+
+#slogan{
+	font-size: 20px;
+	margin:40px 0 0 160px; 
+	}
+
+#navigation{
+	background:rgba(0, 0, 26, 0.9);
+	height:40px; 
+	}
+		
+#navigation ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float: left;
+	margin-left: 275px;
+	}
+		
+#navigation ul li{
+	display:inline-block;
+	position: relative;
+	}
+	
+#navigation ul li a{
+	padding:10px 10px;
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+	transition:0.7s all ease;
+	}
+	
+#navigation ul li a:link,
+#navigation ul li a:visited{
+	color:rgb(255, 128, 0);
+	text-decoration:none;
+	}
+		
+#navigation ul li a:hover{
+	background:#004f99;
+	color: #fff;
+	transition:0.3s all ease;
+	}
+	
+#fb {
+	float: right;
+	font-size: 22px;
+	padding: 6px 12px 0 0;
+	}
+	
+	
+#fb a:link,
+#fb a:visited{
+	font-size: 20px;
+	text-decoration:none;
+	color:#fff;
+	}
+		
+#fb a:hover{
+	color:rgb(26, 140, 255);
+	}
+		
+#fb a:active{
+	color:#6c89c6;
+	}
+	
+#insta {
+	float: right;
+	font-size: 22px;
+	padding: 7px 8px 0 0;
+	}	
+	
+#insta a:link,
+#insta a:visited{
+	text-decoration:none;
+	color:#fff;
+	}
+			
+#insta a:hover{
+	color:#E1306C;
+	}
+			
+#insta a:active{
+	color:#F77737;
+	}
+	
+#youtube {
+	float: right;
+	font-size: 22px;
+	padding: 6px 10px 0 0;
+	}
+		
+#youtube a:link,
+#youtube a:visited{
+	font-size: 20px;
+	text-decoration:none;
+	color:#fff;
+	}
+			
+#youtube a:hover{
+	color:rgb(230, 0, 0);
+	}
+			
+#youtube a:active{
+	color:rgb(255, 26, 26);
+	}
+	
+#main{
+	position:relative;
+	width:545px;
+	float:left;
+	padding:0 0 0 0px;
+	margin-left: 18px;
+	}
+	
+#main2{
+	width:830px;
+	float:left;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	}
+
+#main3 {
+	position:relative;
+	margin-left: 330px;
+	}	
+
+#main a:link,
+#main a:visited,
+#main2 a:link,
+#main2 a:visited {
+	color: #bc5d00;
+	text-decoration: none;
+	}
+		
+#main a:hover,
+#main2 a:hover {
+	color: #3b5998;
+	text-decoration: underline;
+	}
+		
+#main a:active,
+#main2 a:active {
+	color: #c97d7e;
+	}
+	
+#sidebar{
+	width:250px;
+	float:right;
+	background-color: rgba(128, 128, 128, 0.7);
+	}
+
+.h1{
+	padding-left:40px;
+	background: rgba(179, 179, 179, 0.8);
+	color: #bc5d00;
+	font-size: 20px;
+	}
+
+.h2{
+	padding-left:40px;
+	background:rgba(179, 179, 179, 0.8);
+	color: rgb(51, 51, 51);
+	font-size: 12px;
+	}
+
+.tire {
+	margin-left: 40px;
+	}
+
+.img{
+	margin-top: 45px;
+	margin-bottom: 20px;
+	padding-left:25px;
+	}
+
+#footer{
+	background:rgba(0, 0, 26, 0.9);
+	clear:both;
+	margin: 10px 0 0 0;
+	color: #ccc;
+	font-size: 12px;
+	text-align:center;
+	padding: 1px;
+	}	
+	
+#arrow{
+	position:absolute;
+	font-size:25px;
+	top:47px;
+	left:30%;
+	transform:rotate(180deg);
+	animation:bouncearrow 3s infinite;
+	}
+	
+@keyframes bouncearrow{
+	0%{top:40px;   color:#ff0000; }
+	30%{top:60px;  color:#008000; }
+	65%{top:80px;  color:#0000cc; }
+	100%{top:40px; color:#ff0000; }
+	}
+
+#name, 
+#surname,
+#email {
+	width: 270px;
+	height: 25px;
+	}
+
+.insert {
+	margin-left: 100px;
+	float: left;
+	}
+
+#submit, #reset {
+    width: 150px;
+    height: 30px;
+	font-size: 15px;
+	margin-top: 0px;
+    background-color: #004f99;
+	color: #fff;
+	margin-right: 20px;
+	}
+
+.message {
+	float: right;
+	margin-right: 80px;
+	margin-bottom: 20px;
+	}
+
+#gotopbtn {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #004f99;
+	bottom:40px;
+	right: 270px;
+
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	border-radius: 50%;
+	}
+
+a:link,
+a:visited{
+	text-decoration:none;
+	color:#fff;
+	}
+	
+a:hover{
+	color:coral;
+	}
+	
+a:active{
+	color:#6c89c6;
+	}
+
